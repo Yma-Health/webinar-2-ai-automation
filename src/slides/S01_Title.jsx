@@ -25,7 +25,7 @@ export default function S01Title() {
 
       <div className="slide-inner title-inner">
         <A>
-          <img src="/yma_logo.svg" alt="Yma" className="title-logo" />
+          <img src={`${import.meta.env.BASE_URL}yma_logo.svg`} alt="Yma" className="title-logo" />
         </A>
 
         <A d={1}>

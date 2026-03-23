@@ -56,7 +56,7 @@ export default function S30Close() {
             style={{ marginTop: 48 }}
           >
             <img
-              src="/yma_logo.svg"
+              src={`${import.meta.env.BASE_URL}yma_logo.svg`}
               alt="Yma"
               style={{ height: 24, filter: 'brightness(0) invert(1)' }}
             />

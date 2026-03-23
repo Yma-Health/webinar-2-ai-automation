@@ -11,7 +11,7 @@ export default function S03Speakers() {
         <div className="card-grid speaker-grid">
           <A v={scaleIn} d={3} className="speaker-col">
             <div className="card speaker-card">
-              <img src="/boris.png" alt="Boris Semenov" className="speaker-photo" />
+              <img src={`${import.meta.env.BASE_URL}boris.png`} alt="Boris Semenov" className="speaker-photo" />
               <p className="speaker-name">Boris Semenov,<br />Head of Client Success</p>
               <p>5 years of experience in healthtech and AI implementation. Passionate about turning AI into reliable, real-world systems for clinical operations.</p>
             </div>
@@ -19,7 +19,7 @@ export default function S03Speakers() {
 
           <A v={scaleIn} d={4} className="speaker-col">
             <div className="card speaker-card">
-              <img src="/philip.png" alt="Philip Loginov" className="speaker-photo" />
+              <img src={`${import.meta.env.BASE_URL}philip.png`} alt="Philip Loginov" className="speaker-photo" />
               <p className="speaker-name">Philip Loginov,<br />Head of Business Development</p>
               <p>20+ years of experience in healthcare management and revenue growth. Built and scaled a multidisciplinary 300-doctor clinic from the ground up.</p>
             </div>
