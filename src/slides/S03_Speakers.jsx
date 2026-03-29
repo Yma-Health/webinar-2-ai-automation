@@ -5,8 +5,8 @@ export default function S03Speakers() {
     <section className="slide">
       <div className="slide-inner">
         <A><p className="tag">Who we are</p></A>
-        <A d={1}><h2>Speakers</h2></A>
-        <A d={2}><p className="section-subtitle">Yma Health · AI-powered communication for your clinic</p></A>
+        <A d={1}><h2>Yma Health</h2></A>
+        <A d={2}><p className="section-subtitle">AI-powered communication for your clinic</p></A>
 
         <div className="card-grid speaker-grid">
           <A v={scaleIn} d={3} className="speaker-col">
@@ -21,7 +21,7 @@ export default function S03Speakers() {
             <div className="card speaker-card">
               <img src={`${import.meta.env.BASE_URL}philip.png`} alt="Philip Loginov" className="speaker-photo" />
               <p className="speaker-name">Philip Loginov,<br />Head of Business Development</p>
-              <p>20+ years of experience in healthcare management and revenue growth. Built and scaled a multidisciplinary 300-doctor clinic from the ground up.</p>
+              <p>20+ years of experience in healthcare management and revenue growth. Built a multidisciplinary 300-doctor clinic from scratch.</p>
             </div>
           </A>
         </div>

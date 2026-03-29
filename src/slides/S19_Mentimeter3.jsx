@@ -11,12 +11,12 @@ export default function S19Mentimeter3() {
           </div>
         </A>
         <A d={1}>
-          <h2>Which of these has happened at your clinic?</h2>
+          <h2>What would you most want AI to&nbsp;handle?</h2>
         </A>
         <A d={2}>
           <div className="embed-frame">
             <iframe
-              src="https://www.mentimeter.com/app/presentation/alki6qg3furk3no9fpfmqvcmfv9hmqht/view?question=cxwk6kgstf8v"
+              src="https://www.mentimeter.com/app/presentation/alki6qg3furk3no9fpfmqvcmfv9hmqht/edit?question=sdcf38ygk2ko"
               title="Mentimeter Poll"
               className="embed-iframe"
               allow="fullscreen"

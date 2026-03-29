@@ -1,24 +1,27 @@
-import A, { slideLeft, slideRight } from '../components/A'
+import A, { slideRight } from '../components/A'
 
 export default function S14SpamFiltering() {
   return (
-    <section className="slide">
+    <section className="slide" style={{ background: 'var(--white)' }}>
       <div className="slide-inner">
         <A><p className="tag">Solution</p></A>
         <A d={1}><h2>Spam Auto-Filtering</h2></A>
+        <A d={2}>
+          <p className="section-subtitle">
+            Operators are often distracted by spam, irrelevant messages, or inappropriate content,<br />which makes it harder to focus on real patient conversations that require attention.
+          </p>
+        </A>
 
-        <div className="feature-grid">
-          <A v={slideLeft} d={2}>
-            <div className="feature-block">
-              <p className="feature-label feature-label-problem">The problem</p>
-              <p className="feature-text">Operators are often distracted by spam, irrelevant messages, or inappropriate content, which makes it harder to focus on real patient conversations that require attention.</p>
+        <div className="split-layout" style={{ marginTop: 80, alignItems: 'flex-start' }}>
+          <A v={slideRight} d={3}>
+            <div style={{ maxWidth: 380 }}>
+              <p className="speaker-name">How it works</p>
+              <p className="feature-text" style={{ marginTop: 12 }}>Yma automatically detects and filters inappropriate or irrelevant messages. Clearly harmful content is blocked and not shown.</p>
+              <p className="feature-text" style={{ marginTop: 16 }}>Less critical noise (such as marketing or resumes) is marked as spam — it remains accessible if needed but does not interfere with active conversations, allowing your team to stay focused on what truly matters.</p>
             </div>
           </A>
-          <A v={slideRight} d={3}>
-            <div className="feature-block">
-              <p className="feature-label feature-label-solution">How it works</p>
-              <p className="feature-text">Yma automatically detects and filters inappropriate or irrelevant messages. Harmful content is blocked. Less critical noise is <span className="hl-green">marked as spam</span> — accessible if needed but out of the way, letting your team focus on what truly matters.</p>
-            </div>
+          <A d={4}>
+            <img src={`${import.meta.env.BASE_URL}spam-filter.png`} alt="Spam Auto-Filtering" style={{ width: '100%' }} />
           </A>
         </div>
       </div>

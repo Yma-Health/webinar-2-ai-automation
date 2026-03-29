@@ -39,7 +39,7 @@ export default function S08ClinicVsBot() {
         </A>
 
         <A d={4}>
-          <div className="lesson-card">
+          <div className="lesson-card" style={{ marginTop: 56 }}>
             <p className="lesson-label">Lesson learned</p>
             <p className="lesson-text">AI needs to be trained on your specific services and patient expectations — not on what Wikipedia says about medicine.</p>
           </div>

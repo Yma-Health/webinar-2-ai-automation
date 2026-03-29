@@ -2,9 +2,8 @@ import { useRef, useState, useEffect } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const lines = [
-  { text: 'Thank you for your attention.', delay: 0, cls: 'typewriter-line-1' },
-  { text: 'Yma Health', delay: 2000, cls: 'typewriter-line-2' },
-  { text: 'ymahealth.com · Book a demo', delay: 3500, cls: 'typewriter-line-3' },
+  { text: 'Thank you for your attention', delay: 0, cls: 'typewriter-line-close-1' },
+  { text: 'www.yma.health', delay: 2000, cls: 'typewriter-line-close-2' },
 ]
 
 export default function S30Close() {
@@ -24,11 +23,15 @@ export default function S30Close() {
   }, [inView])
 
   return (
-    <section className="slide slide-closing" ref={ref}>
+    <section
+      className="slide slide-bg-image"
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg-warm-gradient.png)` }}
+      ref={ref}
+    >
       <div className="slide-inner closing-content">
         {lines.map((line, i) =>
           i < activeLines ? (
-            <div key={i} className={`typewriter-line ${line.cls}`}>
+            <div key={i} className={`typewriter-line ${line.cls}`} style={{ color: '#1A1A1A' }}>
               {line.text.split(' ').map((word, j) => (
                 <motion.span
                   key={j}
@@ -51,14 +54,14 @@ export default function S30Close() {
         {activeLines >= lines.length && (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6 }}
+            animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
             style={{ marginTop: 48 }}
           >
             <img
               src={`${import.meta.env.BASE_URL}yma_logo.svg`}
               alt="Yma"
-              style={{ height: 24, filter: 'brightness(0) invert(1)' }}
+              style={{ height: 48 }}
             />
           </motion.div>
         )}

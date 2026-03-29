@@ -1,24 +1,18 @@
 import A, { scaleIn } from '../components/A'
 
 export default function S06Reality() {
-  const crossIcon = (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2688B" strokeWidth="2.5" strokeLinecap="round">
-      <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
-    </svg>
-  )
-
   const challenges = [
     {
-      title: 'Integrations are crazy hard',
-      text: 'AI needs real-time access to scheduling, patient data, and communication channels. But most clinics run on fragmented or legacy systems that don\'t talk to each other.',
+      title: 'When your team is overloaded',
+      text: 'Patients write from morning to midnight, and it\'s extremely important to turn every possible request into a patient since the new leads are coming at much slower pace.',
     },
     {
-      title: 'Workflow mismatch',
-      text: 'Teams try to automate complex, exception-heavy processes without clearly defining rules. Result: errors, escalations, and frustrated patients.',
+      title: 'Lost revenue inside your existing patient base',
+      text: 'You have a contact list. People who visited once, inquired and never booked, went quiet after a procedure. That base isn\'t working for you. The resource is there — it\'s just sitting idle.',
     },
     {
-      title: 'Overestimating autonomy',
-      text: 'AI can handle routine requests well. But insurance issues, complaints, and clinical questions still need human judgment.',
+      title: 'What\'s actually happening in your clinic',
+      text: 'How do you measure your own performance right now? Which leads converted, which ones dropped off, and why? Most teams don\'t have a clear answer. And what you can\'t see, you can\'t fix.',
     },
   ]
 
@@ -26,13 +20,17 @@ export default function S06Reality() {
     <section className="slide">
       <div className="slide-inner">
         <A><p className="tag">The reality</p></A>
-        <A d={1}><h2>3 key challenges clinics face when trying to implement AI</h2></A>
+        <A d={1}><h2>3 key challenges<br />the clinics face nowadays</h2></A>
 
         <div className="card-grid card-grid-3">
           {challenges.map((c, i) => (
-            <A v={scaleIn} d={i + 3} key={i}>
-              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-                <div className="card-icon" style={{ background: 'linear-gradient(135deg, #FFF8FB, #F8E7F0)' }}>{crossIcon}</div>
+            <A v={scaleIn} d={i + 2} key={i}>
+              <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: 12, minHeight: 220, paddingBottom: 38 }}>
+                <div className="card-icon" style={{ background: 'linear-gradient(135deg, #FFF8FB, #F8E7F0)' }}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2688B" strokeWidth="2.5" strokeLinecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
+                </div>
                 <h3>{c.title}</h3>
                 <p>{c.text}</p>
               </div>

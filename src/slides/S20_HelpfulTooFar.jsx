@@ -3,7 +3,7 @@ import A from '../components/A'
 export default function S20HelpfulTooFar() {
   return (
     <section className="slide">
-      <div className="slide-inner text-center">
+      <div className="slide-inner">
         <A><p className="tag">Case study</p></A>
         <A d={1}><h2>When "helpful" goes too far</h2></A>
 
@@ -11,7 +11,12 @@ export default function S20HelpfulTooFar() {
           <div className="flight-map">
             <div className="flight-map-path">
               <div className="flight-dot">
-                <div className="flight-dot-ring" />
+                <div className="flight-dot-ring">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
                 <span className="flight-dot-label">Patient's city</span>
               </div>
 
@@ -27,8 +32,8 @@ export default function S20HelpfulTooFar() {
               </div>
 
               <div className="flight-dot">
-                <div className="flight-dot-ring flight-dot-closed">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ef4444" strokeWidth="2.5" strokeLinecap="round">
+                <div className="flight-dot-ring flight-dot-closed" style={{ background: 'linear-gradient(135deg, #FFF8FB, #F8E7F0)', borderColor: '#FDC4D2' }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F2688B" strokeWidth="2.5" strokeLinecap="round">
                     <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
                   </svg>
                 </div>
@@ -36,12 +41,12 @@ export default function S20HelpfulTooFar() {
               </div>
             </div>
 
-            <p className="flight-quote">"The bot said yes."</p>
+            <p className="flight-quote">The bot said yes</p>
           </div>
         </A>
 
         <A d={3}>
-          <div className="lesson-card">
+          <div className="lesson-card" style={{ textAlign: 'left', marginTop: 48 }}>
             <p className="lesson-label">Lesson learned</p>
             <p className="lesson-text">Every AI deployment needs a defined scope. The bot should know what it can handle — and what to pass on.</p>
           </div>
