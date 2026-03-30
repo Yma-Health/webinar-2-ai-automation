@@ -15,7 +15,7 @@ export default function S08bCaseB() {
     <section className="slide">
       <div className="slide-inner">
         <A><p className="tag">Clinic info vs bot</p></A>
-        <A d={1}><h2>Case B: The discount that doesn't exist</h2></A>
+        <A d={1}><h2>The wrong ad that promised miracles</h2></A>
 
         <A d={2}>
           <ChatMockup messages={messages} title="AI Bot" speed={1.3} />
