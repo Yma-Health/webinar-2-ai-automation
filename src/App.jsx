@@ -19,12 +19,15 @@ import S09ServiceCatalog from './slides/S09_ServiceCatalog'
 import S22Evolution from './slides/S22_Evolution'
 import S19Mentimeter3 from './slides/S19_Mentimeter3'
 import SDormantPatients from './slides/S_DormantPatients'
+import SReactivationDemo from './slides/S_ReactivationDemo'
 import SMissedReality from './slides/S_MissedReality'
 import SAnalytics from './slides/S_Analytics'
+import SCampaignDemo from './slides/S_CampaignDemo'
+import SSpringOffer from './slides/S_SpringOffer'
 import S29PartnerProgram from './slides/S29_PartnerProgram'
 import S30Close from './slides/S30_Close'
 
-const SLIDE_COUNT = 24
+const SLIDE_COUNT = 27
 
 export default function App() {
   return (
@@ -51,8 +54,11 @@ export default function App() {
       <S22Evolution />
       <S19Mentimeter3 />
       <SDormantPatients />
+      <SReactivationDemo />
       <SMissedReality />
       <SAnalytics />
+      <SCampaignDemo />
+      <SSpringOffer />
       <S29PartnerProgram />
       <S30Close />
     </>

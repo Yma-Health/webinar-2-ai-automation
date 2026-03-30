@@ -102,6 +102,7 @@ body {
   background: var(--bg);
   line-height: 1.5;
   overflow-x: hidden;
+  counter-reset: slide-counter;
 }
 
 /* ─── Slide Layout ──────────────────────────────────── */
@@ -115,6 +116,24 @@ body {
   position: relative;
   overflow: hidden;
   padding: 48px;
+  counter-increment: slide-counter;
+}
+
+.slide::before {
+  content: counter(slide-counter);
+  position: absolute;
+  top: 24px;
+  left: 28px;
+  font-family: 'Geist', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1A1A1A;
+  opacity: 0.25;
+  z-index: 10;
+}
+
+.slide-divider::before {
+  color: var(--gray-600);
 }
 
 .slide-inner {
